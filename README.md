@@ -1,7 +1,7 @@
 ### To run the project you need to do the following:
 
 ### `npm install`
-Install npm moduler.
+Install npm modules.
 
 ### `npm start`
 Run the application in developer mode.
