@@ -1,10 +1,10 @@
-### För att kunna köra applikationen behöver du göra följande:
+### To run the project you need to do the following:
 
 ### `npm install`
-Installerar npm moduler.
+Install npm moduler.
 
 ### `npm start`
-Kör applikationen i utvecklingsläge.
+Run the application in developer mode.
 
 ### `npm run build`
-Bygger appen för produktion till `build` mappen.
+Build the app for production to the `build` map.
