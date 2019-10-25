@@ -1,0 +1,45 @@
+.allMessages {
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    overflow: auto;
+    padding: 1em;
+}
+
+.newMessage {
+    font-family: 'Inter UI', sans-serif;
+    width: 100%;
+    height: 5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.usernameBox {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chatLine {
+    margin-bottom: 0.3em;
+}
+
+.historyButton {
+    float: right;
+    margin-top: 4.4em;
+    font-size: 0.8em;
+    padding: 0.4rem 0.8rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    background-color: hsl(0,0%,100%);
+    border-color: hsl(0,0%,80%);
+    color: #41597F;
+}
+
+.chatMsgHead {
+    float: left;
+}

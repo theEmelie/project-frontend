@@ -1,0 +1,61 @@
+table {
+      border: 3px solid #FF7FAA;
+      border-radius: 0.5em;
+      background-color:#FF7FAA;
+      width: 100%;
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+}
+
+th, td {
+    padding: 0.1rem;
+    width: 15%;
+}
+
+th {
+    color: white;
+}
+
+tbody tr {
+    background-color: #dadada;
+}
+
+table tbody tr:hover {
+    background-color: #fff;
+}
+
+.viewButton {
+    background-color: #dadada;
+    border: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.addFundsButton {
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FF7FAA;
+    color: white;
+}
+
+.balance {
+    margin-bottom: 2rem;
+}
+
+.balanceInput,
+.buyInput,
+.sellInput {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
+
+::placeholder {
+    color: #aaa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+}
+
+.priceChart {
+    margin-top: 5rem;
+}

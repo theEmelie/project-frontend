@@ -1,0 +1,52 @@
+{
+  "name": "project-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "add": "^2.0.6",
+    "chart.js": "^2.8.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "or": "^0.2.0",
+    "prime-react": "^1.0.0",
+    "primereact": "^3.3.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-chartjs-2": "^2.8.0",
+    "react-charts": "^2.0.0-beta.4",
+    "react-dom": "^16.9.0",
+    "react-linechart": "^1.1.12",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.1.1",
+    "react-scroll": "^1.7.14",
+    "react-select": "^3.0.4",
+    "react-sticky-footer": "0.1.0-rc3",
+    "react-vis": "^1.11.7",
+    "rickshaw": "^1.6.6",
+    "socket.io-client": "^2.3.0",
+    "yarn": "^1.17.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "mocha test/**/*.js",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && rsync -av build/* deploy@proj-react.emelieaslund.me:/var/www/proj-react.emelieaslund.me/html/",
+    "eslint": "eslint ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "javascript-style-guide": "^1.0.1",
+    "mocha": "^6.2.0",
+    "selenium-webdriver": "^3.6.0"
+  }
+}
