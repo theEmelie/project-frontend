@@ -48,8 +48,8 @@ Vi skapar de två funktionerna som vi använde i depot. För att uppdatera prise
 Sedan i våran funktion 'saveObjectData' vilket kallas när vi hämtar alla objekt så vill vi skriva ut våran graf, vi sätter datasets  till en tom array och vi sätter colours till 5 olika färger. Sedan gör vi en loop på svaret vi får ifrån våran fetch och för varje objekt så ger vi dom egenskaper såsom label vilket vi sätter till dess namn (object.name) och data är det nuvarande priset. Sedan gör vi en push på 'datasets' Och i våran tidigare 'graphData' så sätter vi 'labels' och 'datasets'. Och för att skriva ut grafen så gör vi '<Line data={graphData}' under våran objekt tabell.
 
 ## Test
-Use-case 1: Från Hem (/) kan man gå tillbaka till Hem (/).
-Use-case 2: Från Hem (/) kan man gå till Registrering (/forms).
-Use-case 3: Från Registrering (/forms) kan man gå till Logga In (/login).
-Use-case 4: Från Hem (/) kan man gå till Webbshop (/webbshop).
-Use-case 5: Från Webbshop (/webbshop) kan man gå till Depå (/depot).
+`Use-case 1:` Från Hem (/) kan man gå tillbaka till Hem (/).  
+`Use-case 2:`  Från Hem (/) kan man gå till Registrering (/forms).  
+`Use-case 3:`  Från Registrering (/forms) kan man gå till Logga In (/login).  
+`Use-case 4:`  Från Hem (/) kan man gå till Webbshop (/webbshop).  
+`Use-case 5:`  Från Webbshop (/webbshop) kan man gå till Depå (/depot).
