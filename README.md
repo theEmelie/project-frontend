@@ -52,5 +52,5 @@ Sedan i våran funktion 'saveObjectData' vilket kallas när vi hämtar alla obje
 `Use-case 2:`  Från Hem (/) kan man gå till Registrering (/forms).  
 `Use-case 3:`  Från Registrering (/forms) kan man gå till Logga In (/login).  
 `Use-case 4:`  Från Hem (/) kan man gå till Registrering (/register) och sedan till Logga In (/login).  
-`Use-case 5:`  Från Logga In (/login) kan man gå till Registrering (/register) och sedan tillbaka till Logga In (/login) och tillslut till Hem (/).
+`Use-case 5:`  Från Logga In (/login) kan man gå till Registrering (/register) och sedan tillbaka till Logga In (/login) och tillslut till Hem (/).  
 *Jag ville testa att gå in till webbshoppen, men lyckades inte logga in och stanna inloggad därav blev det 5 väldigt enkla cases*
