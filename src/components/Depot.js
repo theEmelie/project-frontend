@@ -182,7 +182,7 @@ class Depot extends Component {
 
         return (
             <div className="getObjects">
-            <h2>{this.state.username}&aposs Depå</h2>
+            <h2>{this.state.username}&apos;s Depå</h2>
                 <div className="balance">
                     <p>Tillgängligt medel: {Math.round(100*(this.state.balance))/100}</p>
                     <input name="balanceInput" className="balanceInput"
