@@ -82,7 +82,7 @@ class Webbshop extends Component {
         // }, () => {console.log(this.state.buyNumber);});
     }
 
-    buyButtonClicked(rowid, e) {
+    buyButtonClicked(rowid) {
         if (this.state.buyNumber[rowid] > 0) {
             const url = "https://proj-api.emelieaslund.me/objects/buy-object";
 
@@ -105,7 +105,9 @@ class Webbshop extends Component {
 
     handleBuyResponse(response) {
         if (Object.prototype.hasOwnProperty.call(response, "data")) {
-            alert("Du har köpt " + response.data.number_to_buy + "st " + response.data.name + ". Vilket har kostat dig " + response.data.purchase_price);
+            alert("Du har köpt " + response.data.number_to_buy + "st " +
+                response.data.name + ". Vilket har kostat dig " +
+                response.data.purchase_price);
         } else {
             alert ("Du har inte tillräckligt med medel.");
         }
@@ -161,7 +163,8 @@ class Webbshop extends Component {
                 <td className="objButton">
                 <input name="buyInput" className="buyInput" placeholder="Ange mängd du vill köpa"
                     type="number" onChange={this.buyChange.bind(this, item.rowid)} />
-                <button className="viewButton" onClick={this.buyButtonClicked.bind(this, item.rowid)}>Köp</button>
+                <button className="viewButton"
+                    onClick={this.buyButtonClicked.bind(this, item.rowid)}>Köp</button>
                 </td>
             </tr>;
         }, this);

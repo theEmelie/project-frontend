@@ -117,7 +117,7 @@ class Depot extends Component {
         // }, () => {console.log(this.state.sellNumber);});
     }
 
-    sellButtonClicked(rowid, e) {
+    sellButtonClicked(rowid) {
         if (this.state.sellNumber[rowid] > 0) {
             const url = "https://proj-api.emelieaslund.me/objects/sell-object";
 
@@ -144,7 +144,8 @@ class Depot extends Component {
             this.setState({
                 sellNumber: []
             });
-            alert("Du har sålt " + response.data.number_to_sell + "st " + response.data.objname + " för " + response.data.sale_funds);
+            alert("Du har sålt " + response.data.number_to_sell + "st " +
+                response.data.objname + " för " + response.data.sale_funds);
         } else {
             alert("Du har inte tillräckligt antal!");
         }
@@ -161,9 +162,13 @@ class Depot extends Component {
                         <td>{item.number_of_objects}</td>
                         <td>{item.current_price}</td>
                         <td className="objButton">
-                        <input name="sellInput" className="sellInput" placeholder="Ange mängd du vill sälja"
-                            type="number" onChange={this.sellChange.bind(this, item.object_rowid)} />
-                        <button className="viewButton" onClick={this.sellButtonClicked.bind(this, item.object_rowid)}>Sälj</button></td>
+                        <input name="sellInput" className="sellInput"
+                            placeholder="Ange mängd du vill sälja"
+                            type="number"
+                            onChange={this.sellChange.bind(this, item.object_rowid)} />
+                        <button className="viewButton"
+                        onClick={this.sellButtonClicked.bind(this, item.object_rowid)}>Sälj
+                            </button></td>
                     </tr>;
                 } else {
                     return  <tr key={index}></tr>;
@@ -177,12 +182,13 @@ class Depot extends Component {
 
         return (
             <div className="getObjects">
-            <h2>{this.state.username}'s Depå</h2>
+            <h2>{this.state.username}&aposs Depå</h2>
                 <div className="balance">
                     <p>Tillgängligt medel: {Math.round(100*(this.state.balance))/100}</p>
                     <input name="balanceInput" className="balanceInput"
                         type="number" onChange={this.fundsChange.bind(this)} />
-                    <button className="addFundsButton" onClick={this.handleAddFunds.bind(this)}>Lägg till medel</button>
+                    <button className="addFundsButton"
+                        onClick={this.handleAddFunds.bind(this)}>Lägg till medel</button>
                 </div>
                 <table>
                     <thead>
